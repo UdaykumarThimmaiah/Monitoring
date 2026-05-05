@@ -51,6 +51,6 @@ docker-compose up --build
 1. Create a free account at [mongodb.com/atlas](https://www.mongodb.com/atlas).
 2. Create a new **free (M0) cluster**.
 3. Under **Database Access**, create a database user with a password.
-4. Under **Network Access**, allow connections from anywhere (`0.0.0.0/0`) or your host's IP.
+4. Under **Network Access**, add your host's specific IP address. Only allow connections from anywhere (`0.0.0.0/0`) as a temporary measure for development; restrict access to known IPs in production.
 5. Click **Connect → Drivers** and copy the connection string.
 6. Set the connection string as the `MONGODB_URI` environment variable in your backend host (Render or Docker Compose).
